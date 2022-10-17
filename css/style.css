@@ -31,3 +31,6 @@ footer{
     width: calc(100%/10);
     height: calc(100%/10);
 }
+.azzurro{
+    background-color: blue;
+}

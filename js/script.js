@@ -17,6 +17,9 @@ const numCell=100;
         const cella= document.createElement("div")
         cella.className="cella"
         cella.innerHTML=`<span>${num}</span>`
+        cella.addEventListener("click",function colore(){
+            this.className="azzurro cella"
+        })
         return cella;
     }
     function drawGrid(){
