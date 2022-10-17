@@ -19,6 +19,7 @@ const numCell=100;
         cella.innerHTML=`<span>${num}</span>`
         cella.addEventListener("click",function colore(){
             this.className="azzurro cella"
+            console.log(this.innerText)
         })
         return cella;
     }
