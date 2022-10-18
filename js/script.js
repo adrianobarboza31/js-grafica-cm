@@ -7,7 +7,6 @@
 // {/* <span>1</span>
 // </div> */}
 const btn = document.getElementById("btn")
-const griglia= document.getElementById("griglia")
 const field= document.getElementById("game")
 function gioca(){
 console.log("inizio gioco....")
@@ -21,9 +20,11 @@ const numCell=100;
             this.className="azzurro cella"
             console.log(this.innerText)
         })
-        return cella;
+        return cell
     }
     function drawGrid(){
+        const griglia = document.createElement("div")
+        griglia.className="griglia"
         for(let i=1;i<=100;i++){
             console.log(i)
            const cella= cell(i);
